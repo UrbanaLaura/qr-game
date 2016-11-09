@@ -10,22 +10,34 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="shared-styles.html">
+<link rel="import" href="../bower_components/paper-listbox/paper-listbox.html">
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+<link href="../bower_components/iron-icons/iron-icons.html" rel="import">
+<link href="../bower_components/iron-icons/social-icons.html" rel="import">
+
 
 <dom-module id="my-view2">
   <template>
     <style include="shared-styles">
       :host {
         display: block;
-
         padding: 10px;
       }
+      .paper-listbox{
+        text-align: center;
+      }
     </style>
-
-    <div class="card">
-      <div class="circle">2</div>
-      <h1>View Two</h1>
-      <p>Ea duis bonorum nec, falli paulo aliquid ei eum.</p>
-      <p>Id nam odio natum malorum, tibique copiosae expetenda mel ea.Detracto suavitate repudiandae no eum. Id adhuc minim soluta nam.Id nam odio natum malorum, tibique copiosae expetenda mel ea.</p>
+     <div class="list">
+      <paper-listbox>
+        <paper-item># Name Surname 
+          <paper-icon-button icon="social:share">
+          </paper-icon-button>
+        </paper-item><br>
+        <paper-item># Name Surname 
+          <paper-icon-button icon="">
+          </paper-icon-button>
+        </paper-item>
+      </paper-listbox>
     </div>
   </template>
 

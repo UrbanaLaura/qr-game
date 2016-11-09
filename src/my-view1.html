@@ -10,6 +10,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="shared-styles.html">
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../bower_components/app-layout/app-header/app-header.html">
+
+
 
 <dom-module id="my-view1">
   <template>
@@ -19,13 +23,74 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
         padding: 10px;
       }
+
+      app-header {
+        color: #fff;
+        background-color: var(--app-primary-color);
+        text-align: center;      }
+
+      .circle {
+        margin: 20px;
+      }
+      .info, .name {
+        display:inline-table;
+        margin: 20px;
+      }
+      .name{
+        position: absolute;
+      }
+      .menu, .info {
+       display:inline-block;
+      }
+      .menu{
+        float: right;
+      }
+      .url, .circle{
+        display: inline-table;
+      }
+
     </style>
 
     <div class="card">
+      <div class="info">
+         <p>XXX Points
+         <p>#SHOOTS
+      </div>
+      <div class="menu"> 
+        <paper-icon-button icon="menu"></paper-icon-button>
+      </div> 
+    </div>
+
+    <div class="card">  
+      <app-header>
+        <app-toolbar>
+              <div main-title>SHOOTED / SHOOTED YOU</div>
+        </app-toolbar>
+      </app-header>
+
+      <div class="info">
+        <div class="circle">1</div>
+         <p>XXX Points
+         <p>#SHOOTS
+      </div>
+      <div class="name">
+        <p>Name surname
+        <p>Bic goes here
+      </div>
+      <div class="menu"> 
+        <paper-icon-button icon="menu"></paper-icon-button>
+        <paper-icon-button icon="menu"></paper-icon-button>
+        <paper-icon-button icon="menu"></paper-icon-button>
+      </div> 
+
+    </div>
+
+    <div class="card">
       <div class="circle">1</div>
-      <h1>View One</h1>
-      <p>Ut labores minimum atomorum pro. Laudem tibique ut has.
-      <p>Lorem ipsum dolor sit amet, per in nusquam nominavi periculis, sit elit oportere ea.Lorem ipsum dolor sit amet, per in nusquam nominavi periculis, sit elit oportere ea.Cu mei vide viris gloriatur, at populo eripuit sit.</p>
+      <div class="url">
+         <p>SPECIAL URL TO VISIT 
+      </div>
+    
     </div>
   </template>
 

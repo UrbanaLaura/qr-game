@@ -10,6 +10,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="shared-styles.html">
+<link rel="import" href="../bower_components/paper-listbox/paper-listbox.html">
+<link rel="import" href="../bower_components/iron-image/iron-image.html">
 
 <dom-module id="my-view3">
   <template>
@@ -19,14 +21,25 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
         padding: 10px;
       }
+      .paper-item{
+        margin: 10px;
+      }
+      
     </style>
-
-    <div class="card">
-      <div class="circle">3</div>
-      <h1>View Three</h1>
-      <p>Modus commodo minimum eum te, vero utinam assueverit per eu.</p>
-      <p>Ea duis bonorum nec, falli paulo aliquid ei eum.Has at minim mucius aliquam, est id tempor laoreet.Pro saepe pertinax ei, ad pri animal labores suscipiantur.</p>
+    <div class="list">
+      <paper-listbox>
+        <paper-item>  
+        <iron-image style="width:30px; height:30px;" src="http://lorempixel.com/400/400"></iron-image>
+         Name Surname
+       </paper-item><br>
+        <paper-item>  
+        <iron-image style="width:30px; height:30px;" src="http://lorempixel.com/400/400"></iron-image>
+         Name Surname
+       </paper-item>
+      </paper-listbox>
     </div>
+     
+     
   </template>
 
   <script>
